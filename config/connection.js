@@ -3,6 +3,7 @@ var mysql = require("mysql");
 var connection;
 
 if(process.env.JAWSDB_URL) {
+	console.log("Using jawsdb");
 	connection = mysql.createConnection(process.env.JAWSDB_URL); 
 	} else {
 		connection = mysql.createConnection({
@@ -15,13 +16,6 @@ if(process.env.JAWSDB_URL) {
 	};
 
 //Making connection
-connection.connect(function(err) {
-	if(err) {
-		console.log(process.env.JAWSDB_URL);
-		console.error("Error connecting!: " + err.stack);
-		return;
-	}
-	console.log("Connected as id: " + connection.threadId);
-});
+connection.connect();
 //Exporting connection for the ORM to use
 module.exports = connection;
