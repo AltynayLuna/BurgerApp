@@ -9,4 +9,4 @@ CREATE TABLE burgers
     date TIMESTAMP NOT NULL,
 	PRIMARY KEY (id)
 );
-SELECT * FROM burgers;
+UPDATE burgers SET devoured=false;
