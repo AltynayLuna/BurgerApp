@@ -1,0 +1,90 @@
+html {
+ 	background-color: #8B0000;
+ }
+
+body {
+ 	width: 75%;
+	margin: 0 auto; 
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	background-color: white;
+}
+#funny_burger {
+ 	display: block;
+    margin: auto;
+}
+
+h1 {
+ 	text-align: center;
+ 	font-family: "Kristen ITC", "Open-sans", sans-serif;
+ 	font-size: 65px;
+ 	margin: 10px;
+}
+
+ul {
+	list-style-type: none;
+}
+.burgerList {
+ 	font-family: "Kristen ITC", "Open-sans", sans-serif;
+ 	font-size: 20px;
+ 	padding-bottom: 20px;
+ }
+ #devour-button {
+ 	font-family: "Kristen ITC", "Open-sans", sans-serif;
+ 	font-weight: normal;
+ 	font-size: 15px;
+ 	text-align: center;
+ 	border-radius: 25px;
+ 	margin: 0;
+ 	padding: 10px;
+ 	background-color: #008000;
+ 	border: none;
+ 	margin-bottom: 20px;
+ }
+
+h2 {
+  	text-align: center;
+ 	font-family: "Kristen ITC", "Open-sans", sans-serif;
+ 	font-size: 40px;
+ 	margin: 20px;
+ }
+
+.formContainer {
+ 	background-color: orange;
+ }
+#burger_name {
+	text-align: center;
+	margin-left: 350px;
+	width: 300px;
+	height: 50px;
+	margin-bottom: 50px;
+	font-size: 20px;
+}
+.addBurger {
+ 	font-family: "Kristen ITC", "Open-sans", sans-serif;
+ 	font-weight: normal;
+ 	font-size: 20px;
+ 	text-align: center;
+ 	margin: 0;
+ 	padding: 10px;
+ 	background-color: #8B0000;
+ 	border: none;
+}
+
+.div-table {
+	display: table;
+	max-width:800px;
+	min-width:600px;
+	margin:0 auto;
+}
+
+.div-row{
+	display: table-row;
+}
+
+.div-col{
+	display: table-cell;
+	border:1px solid #ccc;
+	width: 50%;
+}
