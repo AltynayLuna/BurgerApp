@@ -16,6 +16,8 @@ if(process.env.JAWSDB_URL) {
 	};
 
 //Making connection
-connection.connect();
+connection.connect(function(e) {
+	console.log("Error " + e " !! ");
+});
 //Exporting connection for the ORM to use
 module.exports = connection;

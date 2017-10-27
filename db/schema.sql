@@ -1,12 +1,11 @@
-CREATE DATABASE burgers_db;
-USE burgers_db;
+DROP TABLE burgers;
 
 CREATE TABLE burgers
 (
-	id int NOT NULL AUTO_INCREMENT,
-	burger_name varchar(255) NOT NULL,
+	id INT AUTO_INCREMENT NOT NULL,
+	burger_name varchar(255),
     devoured BOOLEAN DEFAULT false,
-    date TIMESTAMP NOT NULL,
+    createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
 	PRIMARY KEY (id)
 );
-UPDATE burgers SET devoured=false;
+SELECT * FROM burgers
